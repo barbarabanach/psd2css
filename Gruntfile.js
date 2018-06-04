@@ -14,14 +14,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
-        // sass: {
-        //     dev: {
-        //         files: {
-        //             'app/css/style.css': 'app/scss/style.scss'
-        //         }
-        //     }
-        // },
         browserSync: {
             dev: {
                 bsFiles: {
