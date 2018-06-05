@@ -12,7 +12,7 @@ img {
   height: auto;
   display: block; }
 
-h1, h3 {
+h1, h2 {
   font-weight: 300; }
 
 ul {
@@ -145,28 +145,12 @@ ul {
     display: block; }
 
 .block {
-  display: table-row; }
+  background-color: lightblue; }
 
 .outer-block {
   background-color: #fff;
   margin: 10px;
-  width: 330px;
-  max-width: 330px;
-  display: inline-block;
-  overflow-x: hidden;
-  word-wrap: break-word;
-  overflow-y: hidden;
-  height: 230px; }
-  .outer-block h3 {
-    margin: 0;
-    padding-top: 48px;
-    line-height: 0; }
-  .outer-block p {
-    color: #808080;
-    padding: 15px; }
-
-.block {
-  padding-top: 20px; }
+  border: 1px solid; }
 
 .ball-separator:after {
   width: 30px;
@@ -181,6 +165,32 @@ ul {
 
 .article-section {
   background-color: #f5f5f5; }
+
+.eqWrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.eq {
+  padding: 10px;
+  background: yellow;
+  border: 1px solid red; }
+
+.main-boxes {
+  justify-content: space-around; }
+  .main-boxes .equalHM {
+    width: 40%;
+    max-width: 330px; }
+
+.equalHMRWrap {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.equalHMVWrap {
+  flex-wrap: wrap; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .col-m-1 {
@@ -237,6 +247,12 @@ ul {
     width: 100%; }
   .col-offset-1 {
     margin-left: 0; }
+  .main-boxes {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap; }
+  .equalHM {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap; }
   .logo img {
     display: inline-block; } }
 
